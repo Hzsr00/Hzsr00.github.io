@@ -1,86 +1,95 @@
 @charset "UTF-8";
 
 body{
-    color: rgb(252, 248, 16);
-    background-color: rgba(56, 85, 232, 0.747);
-    font-family:sans-serif;
-}
-
-footer{
-    background-color: rgb(25, 227, 11);
-    text-align: center;
-    border: 1px solid rgb(237, 177, 214);
-	background-color: #f0f278;
-	color: #356fc0;
-	padding-top: 10px;
-	padding-bottom: 12px;
-}
-
-.subhead{
-    background-color: rgb(126, 126, 142);
-    color: white;
-}
-
-p{
-    font-size: 90%;
+    font-family: sans-serif;
+    color: rgb(252,248,16);
+    background: linear-gradient(to bottom, #5b2c83, #f7d547);
 }
 
 h1{
-    font-size: 180%;
+    font-size:180%;
 }
 
 h2{
-    font-size: 120%;
-}
-
-article{
-    border: 3px solid rgba(219, 88, 242, 0.902);
-    padding: 20px;
-    margin: 30px;
-}
-
-.logo{
-    width: 150px;
-}
-
-.photo{
-    width: 300px;
-}
-
-img{
-    display: block;
-    margin: 10px auto;
-}
-
-ul{
-	list-style-type: none;
-	padding-left: 0;
-}
-
-li {
-	border: 1px solid rgb(255, 127, 208);
+    font-size:120%;
 }
 
 p{
-	font-size: 90%;
-	line-height: 1.8;
+    font-size:90%;
+    line-height:1.8;
+}
+
+/* ロゴ */
+.logo{
+    float:left;
+    width:150px;
+    height:auto;
+}
+
+.photo{
+    width:300px;
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:10px auto;
+}
+
+img{
+    display:block;
+    margin:10px auto;
+}
+
+article{
+    width:900px;
+    margin:auto;
+    padding:20px;
+    border:3px solid rgba(219,88,242,0.9);
+    clear:both;
+}
+
+section{
+    background-color:rgba(18,77,145,0.8);
+    margin:20px 0;
+    padding:20px;
+    border-radius:10px;
+}
+
+.subhead{
+    background-color:rgb(126,126,142);
+    color:white;
+}
+
+footer{
+    text-align:center;
+    border:1px solid rgb(237,177,214);
+    background-color:#f0f278;
+    color:#356fc0;
+    padding-top:10px;
+    padding-bottom:12px;
 }
 
 ul{
-	list-style-type: none;
-	padding-left: 0;
-	line-height: 1.8;
-	font-size: 90%;
+    list-style-type:none;
+    padding-left:0;
+    line-height:1.8;
+    font-size:90%;
+}
+
+li{
+    border:1px solid rgb(255,127,208);
+}
+
+.moon li{
+    list-style-image:url("../images/moon.png");
 }
 
 ul time{
-	background-color: #b012dc;
-	color: #5ef33cf9;
-	border-radius: 10px;
-	font-size: 90%;
-	padding-left: 5px;
-	padding-right: 5px;
-	margin-right: 5px;
+    background-color:#b012dc;
+    color:#5ef33c;
+    border-radius:10px;
+    padding:0 5px;
+    margin-right:5px;
+    font-size:90%;
 }
 
 nav ul{
@@ -94,100 +103,65 @@ nav li{
     padding:0 10px;
 }
 
-.logo{
-    float:left;
-	width:150px;
-	height:auto;
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-@media (max-width:959px){
-
-    .logo{
-        float:none;
-    }
-
+a:link{
+    color:blue;
 }
 
-article{
-    clear:both;
+a:visited{
+    color:purple;
 }
 
-photo{
-    height:300px;
-	max-width:100%;
-    height:auto;
+a:hover{
+    color:gold;
 }
 
-body{
-    background: linear-gradient(to bottom, #5b2c83, #f7d547);
-}
-
-.moon li{
-    list-style-image: url("../images/moon.png");
-}
-
-.point-img{
-    box-shadow: 0 0 10px 3px #aaa;
-    border-radius: 15px;
-}
-
-article{
-    width: 900px;
-    margin: auto;
-}
-
-section{
-    background-color: rgba(18, 77, 145, 0.8);
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.point{
-    background: linear-gradient(to bottom, #5b2c83, #f7d547);
-}
-
-.point-img{
-    box-shadow: 0 0 10px 3px #aaa;
-    border-radius: 15px;
+a:active{
+    color:red;
 }
 
 .point-img{
     float:right;
+    width:250px;
+    height:auto;
     margin-left:10px;
     margin-bottom:10px;
+    margin-top:-20px;
+    box-shadow:0 0 10px 3px #aaa;
+    border-radius:15px;
 }
 
 .breadcrumb{
-    margin: 10px;
-    font-size: 14px;
+    margin:10px;
+    font-size:14px;
 }
 
-nav a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.point{
+    background:linear-gradient(to bottom,#5b2c83,#f7d547);
 }
 
-a:link{
-    color: blue;
-}
+@media (max-width:959px){
 
-a:visited{
-    color: purple;
-}
+    article{
+        width:auto;
+        margin:10px;
+    }
 
-a:hover{
-    color: gold;
-}
+    .logo{
+        float:none;
+        display:block;
+        margin:auto;
+    }
 
-a:active{
-    color: red;
-}
+    .point-img{
+        float:none;
+        display:block;
+        margin:20px auto;
+    }
 
-.point-img{
-    width: 250px;
-    height: auto;
-    box-shadow: 0 0 10px 3px #aaa;
-    margin-top: -20px;   /* 上に20px移動 */
 }
