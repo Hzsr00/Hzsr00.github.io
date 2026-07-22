@@ -25,9 +25,8 @@ p{
     height:auto;
 }
 
-.moon{
-    width:150px;
-    max-width:50%;
+.photo{
+    width:300px;
     height:auto;
     display:block;
     margin:10px auto;
